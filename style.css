@@ -149,5 +149,11 @@ body > p:last-child {
 
 footer {
   text-align: center;
-  
+  padding: 2rem;
+  background-image: url('img/footer-background.png');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: bottom right;
+  color: #333;
+  font-weight: bold;
 }
