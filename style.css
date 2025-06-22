@@ -47,6 +47,22 @@ section {
   scroll-behavior: smooth;
 }
 
+.timeline-instructions {
+  position: sticky;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #0071C5;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+
 /* Flip Card Container */
 .card {
   flex: 0 0 300px;
