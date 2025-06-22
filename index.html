@@ -250,59 +250,9 @@
 </footer>
 
 
-  <script>
-  function setDirectionByLang() {
-    const lang = document.documentElement.lang;
-    document.body.setAttribute('dir', lang === 'ar' || lang === 'he' ? 'rtl' : 'ltr');
-  }
-  setDirectionByLang();
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
-  // Optional: watch for language changes (e.g., Google Translate)
-  const observer = new MutationObserver(setDirectionByLang);
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-</script>
-
-  <script>
-  // Bootstrap form validation
-  (() => {
-    'use strict';
-    const forms = document.querySelectorAll('.needs-validation');
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  })();
-
-  // Optional: AJAX form submission with confirmation message
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', async function(event) {
-    event.preventDefault();
-
-    if (!form.checkValidity()) return;
-
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
-      form.reset();
-      form.classList.remove('was-validated');
-      alert('Thanks for subscribing! 🎉');
-    } else {
-      alert('Oops! Something went wrong. Try again later.');
-    }
-  });
-</script>
 
 
 </body>
