@@ -38,7 +38,7 @@ header p {
 }
 
 /* Timeline Section */
-section.timeline-scroll {
+.timeline-scroll {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
