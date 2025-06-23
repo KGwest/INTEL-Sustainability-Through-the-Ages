@@ -69,6 +69,8 @@ header p {
   perspective: 1000px;
   scroll-snap-align: start;
   overflow: hidden;
+  min-width: 300px;
+  margin-right: 1rem;
 }
 
 /* Inner Flip Mechanism */
@@ -150,7 +152,7 @@ body > p:last-child {
 
 /* Responsive - Stack Cards Vertically */
 @media (max-width: 768px) {
-  section {
+  .timeline-scroll {
     flex-direction: column;
     overflow-x: unset;
   }
